@@ -1,0 +1,16 @@
+# .gitignore
+
+# 테라폼 상태 파일 (가장 중요)
+*.tfstate
+*.tfstate.backup
+
+# 민감한 변수 파일 (비밀번호 등 포함)
+*.tfvars
+*.auto.tfvars
+
+# 테라폼 설정 폴더
+.terraform/
+.terraform.lock.hcl
+
+# IDE 설정
+.vscode/
