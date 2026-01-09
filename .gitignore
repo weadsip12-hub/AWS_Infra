@@ -1,0 +1,22 @@
+# 1. AWS 자격 증명 및 비밀 정보 (절대 업로드 금지)
+.aws/
+creds/
+*.tfvars
+*.tfvars.json
+
+# 2. 테라폼 상태 파일 (내부 IP, 리소스 ID 등 민감 정보 포함됨)
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# 3. 테라폼 플러그인 폴더 (용량이 크고 필요 없음 - init하면 다시 생김)
+.terraform/
+.terraform.lock.hcl
+
+# 4. 로그 파일
+crash.log
+*.log
+
+# 5. OS 생성 파일
+.DS_Store
+Thumbs.db
